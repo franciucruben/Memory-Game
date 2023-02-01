@@ -1,0 +1,47 @@
+
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+ul.MenuBarHorizontal
+{
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 700px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 8em;
+	float: left;
+}
+
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	background-color: rgb(36, 75, 49);
+	padding: 0.5em 0.75em;
+	color: rgb(243, 173, 81);
+	text-decoration: none;
+}
+/* Menu items that have mouse over or focus have a light-green background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	background-color: rgb(50, 95, 57);
+	color: #FFF;
+}
